@@ -11,7 +11,7 @@ module.exports = {
   output: {
     filename: 'static/bundle-[hash].js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/',
+    publicPath: 'https://gndplayground.github.io/flickr-public-feed/',
   },
 
   devtool: 'source-map',
