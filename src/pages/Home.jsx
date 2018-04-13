@@ -25,7 +25,7 @@ class Home extends Component {
       const s = document.createElement('script');
       s.id = 'callback';
       s.type = 'text/javascript';
-      s.src = `http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=getDataFlickr&format=json&tags=${val.split(' ').join(',')}&tagmode=any`;
+      s.src = `https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=getDataFlickr&format=json&tags=${val.split(' ').join(',')}&tagmode=any`;
       document.getElementsByTagName('head')[0].appendChild(s);
     } else {
       this.props.setFeed(null);
